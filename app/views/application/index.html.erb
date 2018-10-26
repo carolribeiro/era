@@ -36,10 +36,10 @@
 				<nav id="main_navigation" class="col-lg-12 main_navigation">
 					<ul>
 						<li class="scroll active"><%= link_to "Home",   root_path %></a></li>
-						<li class="scroll"><a href="#love_story">Sobre</a></li>
+						<li class="scroll"><a href="#sobre">Sobre</a></li>
 						<li class="scroll"><a href="#important_people">Notícias</a></li>
 						<li class="scroll"><a href="#gallery">Galeria</a></li>
-						<li class="scroll"><a href="#event_parties">Contato</a></li>
+						<li class="scroll"><a href="#rsvp">Contato</a></li>
 						<li class="scroll"><a href="#blog">Login <b class="caret"></b></a>
 							<ul class="dropdown">
 								<li><a href="blog.html">Blog Page</a></li>
@@ -57,7 +57,6 @@
 	<!-- #slider -->
 	<section id="slider">
 		<div class="overlay">
-
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -73,12 +72,10 @@
 	</section> 
 	<!-- /#slider -->
 
-	
 
-	<!-- #love_story -->
-	<section id="love_story">
+	<!-- #sobre -->
+	<section id="sobre">
 		<div class="container">
-
 			<!-- .section_title_wrap -->
 			<div class="section_title_wrap">
 				<h1 class="section_title">
@@ -191,7 +188,7 @@
 			<!-- .section_title_wrap -->
 			<div class="section_title_wrap">
 				<h1 class="section_title">
-					<span>Event <b>&</b> Parties</span>
+					<span>Notícias</span>
 				</h1>
 			</div> <!-- /.section_title_wrap -->
 
@@ -199,7 +196,7 @@
 				
 				<div class="single_event col-lg-3 col-md-3 col-sm-4 col-xs-12 wow slideInLeft">
 					<div class="image-wrap">
-						<img src="images/event/image-1.jpg" alt="event image">
+						<%= image_tag("leticia.jpg", alt: "Letícia") %>
 						<div class="overlay"></div>
 					</div>
 					<h2>Event One</h2>
@@ -208,22 +205,14 @@
 				</div>
 				<div class="single_event col-lg-3 col-md-3 col-sm-4 col-xs-12 wow slideInTop">
 					<div class="image-wrap">
-						<img src="images/event/image-2.jpg" alt="event image">
+						<%= image_tag("leticia.jpg", alt: "Letícia") %>
 						<div class="overlay"></div>
 					</div>
 					<h2>Event Two</h2>
 					<p>There are many variations of passages of Lorem Ipsum available, but the majority havesuffered alteration in some form, by injected humour</p>
 					<a href="#" class="read_more">Read More</a>
 				</div>
-				<div class="single_event col-lg-3 col-md-3 col-sm-4 col-xs-12 wow slideInRight">
-					<div class="image-wrap">
-						<img src="images/event/image-3.jpg" alt="event image">
-						<div class="overlay"></div>
-					</div>
-					<h2>Event Three</h2>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority havesuffered alteration in some form, by injected humour</p>
-					<a href="#" class="read_more">Read More</a>
-				</div>
+			
 
 			</div>
 		</div>
@@ -245,79 +234,90 @@
 					<div class="row">
 						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
 							<div class="image-wrap">
-								<img src="images/blog/image-1.jpg" alt="">
+								<%= image_tag("leticia.jpg", alt: "Letícia") %>
 								<div class="overlay"></div>
 							</div>
-							<h2>Blog Heading</h2>
+							<label>26/10/2018</a></label>
+							<h2>Titulo</h2>
 							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-							<label>Posted by <a href="#">Jhone</a> on <a href="#">dec 24,2014</a></label>
-							<a href="#" class="readmore">read more</a>
-						</div>
-						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
-							<div class="image-wrap">
-								<img src="images/blog/image-1.jpg" alt="">
-								<div class="overlay"></div>
-							</div>
-							<h2>Blog Heading</h2>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-							<label>Posted by <a href="#">Jhone</a> on <a href="#">dec 24,2014</a></label>
 							<a href="#" class="readmore">read more</a>
 						</div>
 					</div>
 				</div>
-				<div class=" col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-delay="500" data-wow-duration="500">
+				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
 					<div class="row">
 						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
 							<div class="image-wrap">
-								<img src="images/blog/image-3.jpg" alt="">
+								<%= image_tag("leticia.jpg", alt: "Letícia") %>
 								<div class="overlay"></div>
 							</div>
-							<h2>Blog Heading</h2>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
-							<p>suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-							<label>Posted by <a href="#">Jhone</a> on <a href="#">dec 24,2014</a></label>
-							<a href="#" class="readmore">read more</a>
-						</div>
-						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
-							<div class="image-wrap">
-								<img src="images/blog/image-3.jpg" alt="">
-								<div class="overlay"></div>
-							</div>
-							<h2>Blog Heading</h2>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
-							<p>suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-							<label>Posted by <a href="#">Jhone</a> on <a href="#">dec 24,2014</a></label>
+							<label>26/10/2018</a></label>
+							<h2>Titulo</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
 							<a href="#" class="readmore">read more</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-delay="1000" data-wow-duration="500">
+				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
 					<div class="row">
 						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
 							<div class="image-wrap">
-								<img src="images/blog/image-2.jpg" alt="">
+								<%= image_tag("leticia.jpg", alt: "Letícia") %>
 								<div class="overlay"></div>
 							</div>
-							<h2>Blog Heading</h2>
+							<label>26/10/2018</a></label>
+							<h2>Titulo</h2>
 							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-							<label>Posted by <a href="#">Jhone</a> on <a href="#">dec 24,2014</a></label>
 							<a href="#" class="readmore">read more</a>
 						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
+					<div class="row">
 						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
 							<div class="image-wrap">
-								<img src="images/blog/image-2.jpg" alt="">
+								<%= image_tag("leticia.jpg", alt: "Letícia") %>
 								<div class="overlay"></div>
 							</div>
-							<h2>Blog Heading</h2>
+							<label>26/10/2018</a></label>
+							<h2>Titulo</h2>
 							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-							<label>Posted by <a href="#">Jhone</a> on <a href="#">dec 24,2014</a></label>
+							<a href="#" class="readmore">Leia mais</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
+					<div class="row">
+						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
+							<div class="image-wrap">
+								<%= image_tag("leticia.jpg", alt: "Letícia") %>
+								<div class="overlay"></div>
+							</div>
+							<label>26/10/2018</a></label>
+							<h2>Titulo</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+							<a href="#" class="readmore">read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
+					<div class="row">
+						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
+							<div class="image-wrap">
+								<%= image_tag("leticia.jpg", alt: "Letícia") %>
+								<div class="overlay"></div>
+							</div>
+							<label>26/10/2018</a></label>
+							<h2>Titulo</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
 							<a href="#" class="readmore">read more</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section> <!-- /#blog -->
+	</section> 
+	<!-- /#blog -->
 
 	<!-- #gallery -->
 	<section id="gallery">
@@ -333,12 +333,11 @@
 			<div class="row-fluid">
 				<ul class="clearfix">
 					<li><a data-gal="prettyPhoto" href="images/gallery/image-1.jpg">
-						<img src="images/gallery/thumbnails/image-1.jpg" alt="single image">
+						<!--<img src="images/gallery/thumbnails/image-1.jpg" alt="single image">-->
 						<%= image_tag("leticia.jpg", alt: "Letícia") %>
 						<span class="overlay"></span>
-					</a></li>					
-										
-					
+					</a>
+					</li>					
 				</ul>
 			</div>
 		</div>		
@@ -352,7 +351,7 @@
 				<div class="row">
 					<h1>Contato</h1>
 					<div class="rsvp_wrap">
-						<h2>SIGN YOUR RSVP</h2>
+						<h2></h2>
 						<form class="contact-form" method="post" action="#">
 							<p><input type="text" name="name" class="name" placeholder="Full Name*"></p>
 							<p><input type="text" name="email" class="email" placeholder="Email*"></p>
@@ -387,7 +386,6 @@
 			</div> <!-- /.section_title_wrap -->
 
 			<div class="row">
-
 				<div class="single_location col-lg-3 col-sm-3">
                     <i class="fa fa-map-marker"></i>
 					<h2>Endereço</h2>
@@ -399,11 +397,10 @@
 					<p>(13) 3227-4834</p>
 				</div>
 				<div class="single_location col-lg-3 col-sm-3">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<i class="fa fa-envelope"></i>
 					<h2>Email</h2>
 					<p>novaera@hotmail.com</p>
 				</div>
-
 			</div>
 		</div>
 	</section> 
@@ -420,10 +417,13 @@
 		<!-- .footer_top -->
 		<div class="footer_top">
 			<%= link_to image_tag("logo.png", alt: "Logo do Projeto Nova Era") %>
-		</div> <!-- /.footer_top -->
+		</div> 
+		<!-- /.footer_top -->
 
 		<!-- .footer_bottom -->
 		<div class="footer_bottom">
-			<p>&copy; 2015 Wedding - Premium WordPress Theme by <a href="#">Template Path</a></p>
-		</div> <!-- /.footer_bottom -->
-	</footer> <!-- /footer -->
+			<p>&copy; 2018 Desenvolvido por Fatec RL</a></p>
+		</div> 
+		<!-- /.footer_bottom -->
+	</footer> 
+	<!-- /footer -->

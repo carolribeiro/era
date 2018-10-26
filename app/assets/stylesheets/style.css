@@ -36,7 +36,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,800,700,600);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
-@import url('css/prettyPhoto.css');
 
 
 /*==========================
@@ -209,6 +208,11 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	text-align: center;
 	padding: 125px 0;
 }
+
+.section_title_wrap p{
+	text-align: justify;
+}
+
 .section_title {
 	font-size: 36px;
 	line-height: 30px;
@@ -529,7 +533,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 }
 #groom_bride .info-box h2 {
 	color: #4f4f4f;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 24px;
 	margin-bottom: 0;
 }
@@ -630,38 +634,38 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
  # 10.  Love Story Styles
  =========================*/
 
-#love_story {
+#sobre {
 	background: #fff;
 	/*padding-bottom: 165px;*/
 }
-#love_story ul li {
+#sobre ul li {
 	padding-bottom: 50px;
-	background-image: url(images/our-love-story-divider.png), url(images/love-story-divider.png);
 	background-position: center top, center top;
 	background-repeat: no-repeat, repeat-y;
 }
-#love_story ul li > div:first-child {
+#sobre ul li > div:first-child {
 	text-align: right;
 	padding-right: 45px;
 }
-#love_story ul li > div:last-child {
+#sobre ul li > div:last-child {
 	text-align: left;
 	padding-left: 45px;
 }
-#love_story h2 {
+#sobre h2 {
 	font-size: 18px;
 	line-height: 24px;
 	color: #262626;
 	margin-bottom: 10px;
 	font-weight: 600;
+    text-align: justify;
 }
-#love_story p {
+#sobre p {
 	font-size: 14px;
 	line-height: 26px;
 	color: #939393;
 	margin-bottom: 10px;
 }
-#love_story a {
+#sobre a {
 	font-size: 13px;
 	line-height: 32px;
 	color: #ff6d6d;
@@ -669,7 +673,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	font-weight: bold;
 }
 
-#love_story .details a.read_more {
+#sobre .details a.read_more {
 	border: 1px solid rgb(255, 109, 109);
 	border-radius: 5px;
 	color: #ff6d6d;
@@ -683,10 +687,10 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	position: relative;
 	z-index: 1;
 }
-#love_story .details a.read_more:hover {
+#sobre .details a.read_more:hover {
 	color: #fff;
 }
-#love_story .details a.read_more:before {
+#sobre .details a.read_more:before {
 	content: '';
 	width: 0;
 	height: 100%;
@@ -698,40 +702,40 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	left: 0;
 	transition: width 0.3s ease 0.1s;
 }
-#love_story .details a.read_more:hover:before {
+#sobre .details a.read_more:hover:before {
 	width: 100%;
 }
 
-#love_story .date {
+#sobre .date {
 	font-size: 18px;
 	line-height: 42px;
 	color: #262626;
 	font-style: italic;
 }
-#love_story .details .details_content {
+#sobre .details .details_content {
 	background-color: #fff;
 	padding: 20px 30px;
 	width: 365px;
 	margin-top: -15px;
 }
-#love_story ul li > div:first-child .details_content {
+#sobre ul li > div:first-child .details_content {
 	float: right;
 
 }
-#love_story ul li > div:first-child .details_content {
+#sobre ul li > div:first-child .details_content {
 	background: url(images/background/love-story-story-bg-left.png) no-repeat 0 0;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
 }
-#love_story ul li > div:last-child .details_content {
+#sobre ul li > div:last-child .details_content {
 	float: left;
 }
-#love_story ul li > div:last-child .details_content {
+#sobre ul li > div:last-child .details_content {
 	background: url(images/background/love-story-story-bg-right.png) no-repeat 0 0;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
 }
-#love_story button.load_more {
+#sobre button.load_more {
 	text-align: center;
 	display: block;
 	margin: 0 auto;
@@ -745,10 +749,10 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	color: #262626;
 	background: #fff;
 }
-#love_story button.load_more:before {
+#sobre button.load_more:before {
   background: #FF6D6D;
 }
-#love_story button.load_more:hover, #love_story button.load_more:focus, #love_story button.load_more:active {
+#sobre button.load_more:hover, #sobre button.load_more:focus, #sobre button.load_more:active {
   color: #fff;
 }
 
@@ -985,8 +989,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	line-height: 30px;
 	color: #fff;
 	font-weight: 600;
-	text-transform: uppercase;
-
+    font-family: 'Lobster';
 	margin-bottom: 50px;
 }
 #rsvp .rsvp_wrap {
@@ -1245,6 +1248,12 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	font-weight: 600;
 	margin-top: 20px;
 	margin-bottom: 10px;	
+}
+
+
+#our_location .single_location i {
+	color: rgba(255,109,109, 1);
+	font-size: 25px;
 }
 
 /*==========================
@@ -1679,13 +1688,13 @@ footer {
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    #love_story ul li > div:first-child {
+    #sobre ul li > div:first-child {
     	padding-right: 30px;
     }
-    #love_story ul li > div:last-child {
+    #sobre ul li > div:last-child {
     	padding-left: 30px;
     }
-    #love_story .details .details_content {
+    #sobre .details .details_content {
     	width: 330px;
     }
     #important_people .row div .info-box {
@@ -1762,34 +1771,34 @@ footer {
 	.single_bride {
 		padding-left: 15px;
 	}
-	#love_story ul li {
+	#sobre ul li {
 		padding-top: 65px;
 		padding-bottom: 50px;
 		background-image: url(images/our-love-story-divider.png);
 		background-position: center top;
 		background-repeat: no-repeat;
 	}
-	#love_story ul li > div:first-child,
-	#love_story ul li > div:last-child {
+	#sobre ul li > div:first-child,
+	#sobre ul li > div:last-child {
 		text-align: center;
 	}
-	#love_story ul li > div:first-child .details_content {
+	#sobre ul li > div:first-child .details_content {
 		background: #fff;
 		border: 1px solid #ecebea;
 	}
-	#love_story ul li > div:last-child .details_content {
+	#sobre ul li > div:last-child .details_content {
 		background: #fff;
 		border: 1px solid #ecebea;
 	}
-	#love_story ul li > div.details:first-child {
+	#sobre ul li > div.details:first-child {
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
-	#love_story ul li > div.details:last-child {
+	#sobre ul li > div.details:last-child {
 		margin-top: 30px;
 		position: relative;
 	}
-	#love_story ul li > div.details:last-child:before {
+	#sobre ul li > div.details:last-child:before {
 		background: url("images/arrow-love-res.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 		content: " ";
 		display: inline-block;
@@ -1800,7 +1809,7 @@ footer {
 		transform: rotate(-270deg);
 		width: 18px;
 	}
-	#love_story ul li > div.details:first-child:after {
+	#sobre ul li > div.details:first-child:after {
 		background: url("images/arrow-love-res.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 		content: " ";
 		display: inline-block;
@@ -1872,17 +1881,17 @@ footer {
 	#our_location .single_location:last-child {
 		margin-right:  auto;
 	}
-	#love_story ul li > div:first-child .details_content {
+	#sobre ul li > div:first-child .details_content {
     	float: none;
     }
-	#love_story ul li > div:last-child .details_content {
+	#sobre ul li > div:last-child .details_content {
     	float: none;
     }
-    #love_story .details .details_content {
+    #sobre .details .details_content {
     	width: 280px;
     	margin: 0 auto;
     }
-    #love_story ul li > div:last-child {
+    #sobre ul li > div:last-child {
     	padding-left: 0;
     }
     #rsvp .rsvp_wrap {
@@ -2037,7 +2046,7 @@ footer {
 		font-size: 34px;
 		line-height: 43px;
 	}
-    #love_story .details .details_content {
+    #sobre .details .details_content {
        	width: 365px;
     	margin: 0 auto;
     }
