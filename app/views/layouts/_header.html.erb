@@ -1,0 +1,37 @@
+<!-- header -->
+<header id="header">
+	<div class="container">
+		<div class="row">
+			<!-- #logo -->
+			<div id="logo" class="col-lg-12 animated fadeInUp">
+				<a>
+					<%= link_to image_tag("logo.png", alt: "Logo do Projeto Nova Era") %>
+				</a>
+			</div> 
+			<!-- /#logo -->
+			
+			<button class="nav-collapser">
+				<i class="fa fa-bars"></i>
+			</button>
+
+			<!-- #main_navigation -->
+			<nav id="main_navigation" class="col-lg-12 main_navigation">
+				<ul>
+					<li class="scroll active"><%= link_to "Home",   root_path %></a></li>
+					<li class="scroll"><%= link_to "Sobre", sobre_path %></li>
+					<li class="scroll"><%= link_to "Notícias", noticias_path %></li></li>
+					<li class="scroll"><%= link_to "Galeria", galeria_path %></li></li>
+					<li class="scroll"><%= link_to "Contato", contato_path %></li></li>
+					<li class="scroll"><a href="#blog">Login <b class="caret"></b></a>
+						<ul class="dropdown">
+							<li><a href="blog.html">Blog Page</a></li>
+							<li><a href="single-post.html">Single Post</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav> 
+			<!-- /#main_navigation -->
+		</div>
+	</div>
+</header> 
+<!-- /header -->
