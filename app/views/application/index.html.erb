@@ -1,0 +1,429 @@
+        <!-- Testimonial Wrapper End -->
+<!--        <div class="wd_testimonial_wrapper wd_toppadder100 wd_bottompadder100">-->
+<!--            <div class="wd_overlay"></div>-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
+<!--                        <div class="item">-->
+<!--                            <div class="wd_testimo_box">-->
+<!--                                <p>Horário de atendimento</p>-->
+<!--                                <h4>Fatec Rubens Lara</h4>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <!-- Testimonial Wrapper End -->
+
+<!-- header -->
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<!-- #logo -->
+				<div id="logo" class="col-lg-12 animated fadeInUp">
+					<a>
+						<%= link_to image_tag("logo.png", alt: "Logo do Projeto Nova Era") %>
+					</a>
+				</div> 
+				<!-- /#logo -->
+				
+				<button class="nav-collapser">
+					<i class="fa fa-bars"></i>
+				</button>
+
+				<!-- #main_navigation -->
+				<nav id="main_navigation" class="col-lg-12 main_navigation">
+					<ul>
+						<li class="scroll active"><%= link_to "Home",   root_path %></a></li>
+						<li class="scroll"><a href="#love_story">Sobre</a></li>
+						<li class="scroll"><a href="#important_people">Notícias</a></li>
+						<li class="scroll"><a href="#gallery">Galeria</a></li>
+						<li class="scroll"><a href="#event_parties">Contato</a></li>
+						<li class="scroll"><a href="#blog">Login <b class="caret"></b></a>
+							<ul class="dropdown">
+								<li><a href="blog.html">Blog Page</a></li>
+								<li><a href="single-post.html">Single Post</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav> 
+				<!-- /#main_navigation -->
+			</div>
+		</div>
+	</header> 
+	<!-- /header -->
+
+	<!-- #slider -->
+	<section id="slider">
+		<div class="overlay">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="wow fadeIn"  data-wow-duration="2000">Informática gratuita e de <br>qualidade para a melhor idade</h1>
+						
+						<ul class="time_counter clearfix" id="countdowncontainer">
+							<!-- dynamically count down wil added by js -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> 
+	<!-- /#slider -->
+
+	
+
+	<!-- #love_story -->
+	<section id="love_story">
+		<div class="container">
+
+			<!-- .section_title_wrap -->
+			<div class="section_title_wrap">
+				<h1 class="section_title">
+					<span>Sobre o Projeto</span>
+				</h1>
+				<p class="section-text">
+				    No segundo semestre de 2010 o diretor professor Dr. Paulo Roberto Schroeder de Souza implantou na Fatec Baixada Santista Rubens Lara cursos voltados a terceira idade denominado como <b>Projeto Nova Era - Melhor Idade</b>, que tem como objetivo de desenvolver junto com os professores, através de aulas práticas, uma metodologia voltada a Terceira Idade.
+				</p>
+				<p>
+				    <b>A Tecnologia está a serviço de todos, não há limite de idade.</b>
+				</p>
+				<p>
+				    Para nossos alunos, o desafio de usar o computador é um resgate ao isolamento social, estimulação mental, elevação da autoestima, inserção na atualidade e socialização. Onde através de uma forma tímida e com as dificuldades de qualquer iniciante eles começam a descobrir o apaixonante mundo digital.
+				</p>
+				<h2>Premiações</h2>
+				<p>
+				    Em 2013, o projeto foi premiado como um dos destaques na 7ª Feira Tecnológica do Centro Paula Souza (Fetesp) na categoria Comunidade e Escola, uma parceria de sucesso.
+                </p>
+                <p>
+                   Em 2014, o projeto foi premiado na 10ª Edição do Prêmio Mario Covas na categoria Cidadania em Rede.
+                </p>
+				<h2>Cursos</h2>
+				<p>
+				    <b>Informática:</b> turma composta por 12 alunos com carga horária de 4 horas semanais.
+                </p>
+                <p>
+                    <b>Espanhol:</b> turma composta por 15 alunos com carga horária de 2 horas semanais.
+                </p>
+                <p>
+                    Ao término de cada turma ocorre uma cerimônia de entrega dos certificados para todos os alunos que concluíram o curso.
+				</p>
+			</div> 
+			<!-- /.section_title_wrap -->
+		</div>
+	</section> 
+	
+	<!-- #groom_bride -->
+	<section id="groom_bride">
+		<!-- .curv -->
+		<div class="curv-gray"></div> 
+		<!-- /.curv -->
+		<div class="container">
+			<!-- .section_title_wrap -->
+			<div class="section_title_wrap">
+				<h1 class="section_title">
+					<span>Membros do Projeto</span>
+				</h1>
+			</div> 
+			<!-- /.section_title_wrap -->
+			<div class="row">
+				<!-- .single_groom -->
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 single_groom col-lg-push-1 col-md-push-1 wow slideInLeft" data-animation-duration="3s" data-animation-delay="1s">
+					<%= image_tag("leticia.jpg", alt: "Letícia") %>
+					<div class="info-box">
+						<h2>Letícia Gomes Rodrigues</h2>
+						<span>Coordenadora Administrativa</span>
+					</div>
+				</div> 
+				<!-- /.single_groom -->
+
+				<!-- .single_bride -->
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 single_bride col-lg-offset-1 col-md-offset-1 wow slideInRight"  data-animation-duration="3s" data-animation-delay="2s">
+					<%= image_tag("nadia.jpg", alt: "professora Nádia") %>
+					<div class="info-box">
+						<h2>Nádia Cristina B. A. dos Santos</h2>
+						<span>Professora de Informática</span>
+					</div>
+				</div> 
+				<!-- /.single_bride -->
+				
+				<!-- .single_bride -->
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 single_bride col-lg-offset-1 col-md-offset-1 wow slideInRight"  data-animation-duration="3s" data-animation-delay="2s">
+					<%= image_tag("acucena.jpg", alt: "professora Açucena") %>
+					<div class="info-box">
+						<h2>Açucena Ortega Rabadán</h2>
+						<span>Professora de Espanhol</span>
+					</div>
+				</div> 
+				<!-- /.single_bride -->
+
+			</div>
+		</div>
+	</section> 
+	<!-- /#groom_bride -->
+
+	<!-- #qoute -->
+	<section id="qoute">
+		<div class="overlay">
+			<div class="container">
+				<div class="row wow slideInLeft">
+					<h2>“Love is all about somthing unforgatble <br> toucing moment which is happening every time between you & me”</h2>
+					
+					<button>jhon rashed</button>
+
+				</div>
+			</div>
+		</div>
+	</section> <!-- /#qoute -->
+
+	<!-- .curv-white -->
+	<section class="curv-white">
+		<h2>This is only for validation</h2>
+	</section> <!-- /.curv-white -->
+
+
+	<!-- #event_parties -->
+	<section id="event_parties">
+		<div class="container">
+
+			<!-- .section_title_wrap -->
+			<div class="section_title_wrap">
+				<h1 class="section_title">
+					<span>Event <b>&</b> Parties</span>
+				</h1>
+			</div> <!-- /.section_title_wrap -->
+
+			<div class="row">
+				
+				<div class="single_event col-lg-3 col-md-3 col-sm-4 col-xs-12 wow slideInLeft">
+					<div class="image-wrap">
+						<img src="images/event/image-1.jpg" alt="event image">
+						<div class="overlay"></div>
+					</div>
+					<h2>Event One</h2>
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority havesuffered alteration in some form, by injected humour</p>
+					<a href="#" class="read_more">Read More</a>
+				</div>
+				<div class="single_event col-lg-3 col-md-3 col-sm-4 col-xs-12 wow slideInTop">
+					<div class="image-wrap">
+						<img src="images/event/image-2.jpg" alt="event image">
+						<div class="overlay"></div>
+					</div>
+					<h2>Event Two</h2>
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority havesuffered alteration in some form, by injected humour</p>
+					<a href="#" class="read_more">Read More</a>
+				</div>
+				<div class="single_event col-lg-3 col-md-3 col-sm-4 col-xs-12 wow slideInRight">
+					<div class="image-wrap">
+						<img src="images/event/image-3.jpg" alt="event image">
+						<div class="overlay"></div>
+					</div>
+					<h2>Event Three</h2>
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority havesuffered alteration in some form, by injected humour</p>
+					<a href="#" class="read_more">Read More</a>
+				</div>
+
+			</div>
+		</div>
+	</section> <!-- /#event_parties -->
+	
+	<!-- #blog -->
+	<section id="blog">
+		<div class="container">
+
+			<!-- .section_title_wrap -->
+			<div class="section_title_wrap">
+				<h1 class="section_title">
+					<span>Notícias</span>
+				</h1>
+			</div> <!-- /.section_title_wrap -->
+
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
+					<div class="row">
+						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
+							<div class="image-wrap">
+								<img src="images/blog/image-1.jpg" alt="">
+								<div class="overlay"></div>
+							</div>
+							<h2>Blog Heading</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+							<label>Posted by <a href="#">Jhone</a> on <a href="#">dec 24,2014</a></label>
+							<a href="#" class="readmore">read more</a>
+						</div>
+						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
+							<div class="image-wrap">
+								<img src="images/blog/image-1.jpg" alt="">
+								<div class="overlay"></div>
+							</div>
+							<h2>Blog Heading</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+							<label>Posted by <a href="#">Jhone</a> on <a href="#">dec 24,2014</a></label>
+							<a href="#" class="readmore">read more</a>
+						</div>
+					</div>
+				</div>
+				<div class=" col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-delay="500" data-wow-duration="500">
+					<div class="row">
+						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
+							<div class="image-wrap">
+								<img src="images/blog/image-3.jpg" alt="">
+								<div class="overlay"></div>
+							</div>
+							<h2>Blog Heading</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+							<p>suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+							<label>Posted by <a href="#">Jhone</a> on <a href="#">dec 24,2014</a></label>
+							<a href="#" class="readmore">read more</a>
+						</div>
+						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
+							<div class="image-wrap">
+								<img src="images/blog/image-3.jpg" alt="">
+								<div class="overlay"></div>
+							</div>
+							<h2>Blog Heading</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+							<p>suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+							<label>Posted by <a href="#">Jhone</a> on <a href="#">dec 24,2014</a></label>
+							<a href="#" class="readmore">read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-delay="1000" data-wow-duration="500">
+					<div class="row">
+						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
+							<div class="image-wrap">
+								<img src="images/blog/image-2.jpg" alt="">
+								<div class="overlay"></div>
+							</div>
+							<h2>Blog Heading</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+							<label>Posted by <a href="#">Jhone</a> on <a href="#">dec 24,2014</a></label>
+							<a href="#" class="readmore">read more</a>
+						</div>
+						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
+							<div class="image-wrap">
+								<img src="images/blog/image-2.jpg" alt="">
+								<div class="overlay"></div>
+							</div>
+							<h2>Blog Heading</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+							<label>Posted by <a href="#">Jhone</a> on <a href="#">dec 24,2014</a></label>
+							<a href="#" class="readmore">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> <!-- /#blog -->
+
+	<!-- #gallery -->
+	<section id="gallery">
+		<div class="container-fluid">
+
+			<!-- .section_title_wrap -->
+			<div class="section_title_wrap">
+				<h1 class="section_title">
+					<span>Galeria</span>
+				</h1>
+			</div> <!-- /.section_title_wrap -->
+
+			<div class="row-fluid">
+				<ul class="clearfix">
+					<li><a data-gal="prettyPhoto" href="images/gallery/image-1.jpg">
+						<img src="images/gallery/thumbnails/image-1.jpg" alt="single image">
+						<%= image_tag("leticia.jpg", alt: "Letícia") %>
+						<span class="overlay"></span>
+					</a></li>					
+										
+					
+				</ul>
+			</div>
+		</div>		
+	</section> 
+	<!-- /#gallery -->
+	
+	<!-- #rsvp -->
+	<section id="rsvp">
+		<div class="overlay">
+			<div class="container">
+				<div class="row">
+					<h1>Contato</h1>
+					<div class="rsvp_wrap">
+						<h2>SIGN YOUR RSVP</h2>
+						<form class="contact-form" method="post" action="#">
+							<p><input type="text" name="name" class="name" placeholder="Full Name*"></p>
+							<p><input type="text" name="email" class="email" placeholder="Email*"></p>
+							<select class="guest" name="guest">
+								<option selected="selected" value="Guest">Guest*</option>
+								<option value="Relatives">Relatives*</option>
+								<option value="Others">Others*</option>
+							</select>
+							<input type="text" name="attend" class="attend" placeholder="Event you want to Attend*">
+							<button type="submit">ENVIAR</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> <!-- /#rsvp -->
+
+	<!-- .curv -->
+	<section class="curv-gray">
+		<h2>This is only for validation</h2>
+	</section> <!-- /.curv -->
+
+	<!-- #our_location -->
+	<section id="our_location">
+		<div class="container">
+
+			<!-- .section_title_wrap -->
+			<div class="section_title_wrap">
+				<h1 class="section_title">
+					<span>Localização</span>
+				</h1>
+			</div> <!-- /.section_title_wrap -->
+
+			<div class="row">
+
+				<div class="single_location col-lg-3 col-sm-3">
+                    <i class="fa fa-map-marker"></i>
+					<h2>Endereço</h2>
+					<p> Fatec Rubens Lara <br>Av. Bartolomeu de Gusmão, 110 - Aparecida, Santos - SP, 11045-908</p>
+				</div>
+				<div class="single_location col-lg-3 col-sm-3">
+					<i class="fa fa-phone"></i>
+					<h2>Telefone</h2>
+					<p>(13) 3227-4834</p>
+				</div>
+				<div class="single_location col-lg-3 col-sm-3">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<h2>Email</h2>
+					<p>novaera@hotmail.com</p>
+				</div>
+
+			</div>
+		</div>
+	</section> 
+	<!-- /#our_location -->
+
+	<!-- #gmap -->
+	<div id="gmap">
+
+	</div> <!-- /#gmap -->
+
+	<!-- footer -->
+	<footer>
+		
+		<!-- .footer_top -->
+		<div class="footer_top">
+			<%= link_to image_tag("logo.png", alt: "Logo do Projeto Nova Era") %>
+		</div> <!-- /.footer_top -->
+
+		<!-- .footer_bottom -->
+		<div class="footer_bottom">
+			<p>&copy; 2015 Wedding - Premium WordPress Theme by <a href="#">Template Path</a></p>
+		</div> <!-- /.footer_bottom -->
+	</footer> <!-- /footer -->
