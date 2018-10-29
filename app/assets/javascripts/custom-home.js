@@ -1,9 +1,7 @@
 //////////////////////////////////////////
 // INDEX ////////////////////////////////
 // TABLE OF CONTENT ////////////////////
-// 1. Google Map code /////////////////
 // 2. Scroll Effect code /////////////
-// 3. CountDown /////////////////////
 // 4. Background slider ////////////
 // 5. Contact Form Validation /////
 //////////////////////////////////
@@ -13,97 +11,6 @@
 (function ($) {
 
 "use strict";
-
-////////////////////////////////////////////////
-/////////// 1. code for Google Map /////////////
-///////////////////////////////////////////////
-
-var map;
-
-map = new GMaps({
-	el: '#gmap',
-	lat: 34.056772,
-	lng: -118.244174,
-	scrollwheel:false,
-	zoom: 16,
-	zoomControl : true,
-	panControl : true,
-	streetViewControl : true,
-	mapTypeControl: false,
-	overviewMapControl: false,
-	clickable: true
-});
-
-var image = '';
-map.addMarker({
-	lat: 34.056772,
-	lng: -118.244174,
-	infoWindow: {
-	  content: '<p class="map-info"><strong>Los Angeles</strong> <br/> Angel Street 146, B16 <br/> (058) 569 3668</p>'
-	}
-});
-map.addMarker({
-	lat: 34.056459,
-	lng: -118.247132,
-	infoWindow: {
-	  content: '<p class="map-info"><strong>Los Angeles</strong> <br/> Olvera Street <br/> (058) 569 3668</p>'
-	}
-});
-map.addMarker({
-	lat: 34.057469,
-	lng: -118.237551,
-	infoWindow: {
-	  content: '<p class="map-info"><strong>Los Angeles</strong> <br/> Grand Park <br/> (058) 569 3668</p>'
-	}
-});
-
-
-var styles = [ 
-
-{
-	"featureType": "road",
-	"stylers": [
-	{ "color": "#ffffff" }
-	]
-},{
-	"featureType": "water",
-	"stylers": [
-	{ "color": "#99b3cc" }
-	]
-},{
-	"featureType": "landscape",
-	"stylers": [
-	{ "color": "#f2efe9" }
-	]
-},{
-	"elementType": "labels.text.fill",
-	"stylers": [
-	{ "color": "#d3cfcf" }
-	]
-},{
-	"featureType": "poi",
-	"stylers": [
-	{ "color": "#ded2ac" }
-	]
-},{
-	"elementType": "labels.text",
-	"stylers": [
-	{ "saturation": 1 },
-	{ "weight": 0.1 },
-	{ "color": "#000000" }
-	]
-}
-
-];
-
-map.addStyle({
-	styledMapName:"Styled Map",
-	styles: styles,
-	mapTypeId: "map_style"  
-});
-
-map.setStyle("map_style");
-
 
 
 //////////////////////////////////////////////////////////////////
@@ -141,18 +48,6 @@ function Scroll() {
 	})
 
 };
-
-
-
-///////////////////////////////////////////////////////
-/////////////// 3. code for CountDown ////////////////
-/////////////////////////////////////////////////////
-
-// add your countdown wrapper and countdown timer
-// first parameter is countdown wrapper and 2nd parameter countdown finisher time
-var futuredate=new cdtime("countdowncontainer", "August 20, 2015 04:30:00");
-futuredate.displaycountdown("days", formatresults);
-
 
 
 

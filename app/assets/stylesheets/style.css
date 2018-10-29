@@ -138,20 +138,6 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 }
 
 
-.preloader { 
-	position:fixed;
-	left:0px; 
-	top:0px; 
-	width:100%; 
-	height:100%; 
-	z-index:999999; 
-	background-color:rgba(255,255,255,1); 
-	background-position:center center; 
-	background-repeat:no-repeat; 
-	background-image:url(images/preloader.GIF);
-}
-
-
 
 /*==========================
  # 3. Sticky Header styles
@@ -290,7 +276,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	transition: all 0.3s;
 }
 #main_navigation ul > li > a:before {
-	background: none repeat scroll 0 0 rgb(255, 109, 109);
+	background: none repeat scroll 0 0 #a24d86;
 	bottom: 0;
 	content: "";
 	display: inline-block;
@@ -308,7 +294,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 
 #main_navigation ul > li > a:hover,
 #main_navigation ul > li.active > a {
-	color: #ff6d6d;
+	color: #a24d86 !important;
 }
 #main_navigation ul li a b.caret {
 	margin-top: -5px;
@@ -328,7 +314,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	left: -9999px;
 	width: 200px;
 	top: 90px;
-	background: rgba(255,109,109,1);
+	background: #a24d86;
 	border: 1px solid #fff;
 	padding: 10px;
 	border-radius: 5px;
@@ -340,7 +326,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
   display: inline-block;
   font-size: 25px;
   line-height: 25px;
-  color: #FC7070;
+  color: #a24d86;
   position: absolute;
   top: -15px;
   left: 15px;
@@ -380,7 +366,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 }
 #header button.nav-collapser {
 	display: none;
-	background: #FC7070;
+	background: #a24d86;
 	color: #fff;
 	text-align: center;
 	border: none;
@@ -467,18 +453,6 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	display: none;
 }
 
-/*==========================
- # 8. Curv White Styles
- =========================*/
-
-.curv-white {
-	background: url(images/curv-white.png) repeat-x;
-	height: 20px;
-	margin-top: -10px;
-}
-.curv-white h2 {
-	display: none;
-}
 
 /*==========================
  # 9. Groom and Bride Styles
@@ -488,7 +462,6 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	background: #F9F7F1;
 }
 #groom_bride .curv-gray {
-	background: url(images/curv.png) repeat-x;
 	height: 20px;
 	margin-top: 0px;
 	position: relative;
@@ -498,9 +471,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	background: #F9F7F1;
 	padding-bottom: 165px;
 }
-#groom_bride .row {
-	background: url(images/heart.png) no-repeat center center;
-}
+
 .single_groom {
 	padding-right: 70px;
 }
@@ -523,7 +494,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 }
 .single_groom:hover img,
 .single_bride:hover img {
-	border-color: #FF6D6D;
+	border-color: #a24d86;
 }
 #groom_bride .info-box {
 	background: #fff;
@@ -541,7 +512,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	font-size: 12px;
 	line-height: 24px;
 	font-weight: bold;
-	color: #ff6d6d;
+	color: #a24d86;
 }
 #groom_bride .info-box p {
 	color: #bdbcbc;
@@ -613,7 +584,8 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
   right: 0;
   top: 0;
   bottom: 0;
-  border-color: #FF6D6D;
+  border-color: #a24d86
+  ;
   border-style: solid;
   border-width: 0;
   -webkit-transition-property: border-width;
@@ -631,7 +603,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 
 
 /*==========================
- # 10.  Love Story Styles
+ # 10.  Sobre
  =========================*/
 
 #sobre {
@@ -837,14 +809,11 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
  =========================*/
 
 #qoute {
-	background: url(images/background/qoute-bg.jpg) center center no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
 	text-align: center;
 }
 #qoute .overlay {
 	padding: 145px 0 120px;
-	background: rgba(255,109,109,.85);
+	background: #a24d86;
 }
 #qoute h2 {
  	font-size: 24px;
@@ -1021,7 +990,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 
 }
 #rsvp .rsvp_wrap button[type="submit"] {
-	background: #FF6D6D;
+	background: #a24d86;
 	color: #fff;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -1260,14 +1229,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
  =========================*/
 
 #gmap {
-
-}
-
-#gmap {
 	height:440px;
-	box-shadow: 0px 0px 7px #555;
-	-moz-box-shadow:  0px 0px 7px #555;
-	-webkit-box-shadow:  0px 0px 7px #555;
 }
 
 div#gmap {
@@ -1275,6 +1237,7 @@ div#gmap {
 	margin-left:0% !important;
 	margin-top:0px !important;
 	border-bottom:solid 1px #ddd !important;
+	border-top:solid 1px #ddd !important;
 }
 div#gmap:before, div#gmap:after {display:none;}
 
@@ -1294,6 +1257,7 @@ footer {
 .footer_top {
 	padding-top: 65px;
 	padding-bottom: 35px;
+	border-top: 1px solid #e7ebf3;
 }
 .footer_bottom {
 	border-top: 1px solid #e7ebf3;
