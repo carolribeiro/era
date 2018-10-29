@@ -279,7 +279,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	font-size: 14px;
 	line-height: 75px;
 	font-weight: 600;
-	color: #737373;
+	color: #a24d86;
 	text-decoration: none;
 	text-transform: uppercase;
 	padding: 0 15px;
@@ -1096,7 +1096,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	transition: all .3s ease .1s;
 }
 #blog .single_blog_post:hover {
-	border: 1px solid rgb(255,109,109);
+	border: 1px solid #a24d86;
 }
 #blog .single_blog_post img {
 	width: 100%;
@@ -1127,7 +1127,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 }
 #blog .single_blog_post a.readmore {
 	display: inline-block;
-	background: #FF6D6D;
+	background: #a24d86;
 	color: #fff;
 	padding: 5px 20px;
 	text-transform: uppercase;
@@ -1167,7 +1167,6 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	opacity: 0;
 	top: 0;
 	left: 0px;
-	background: rgba(255,109,109,.75);
 	transition-property: left, opacity;
 	transition-duration: 0.5s;
 	transition-timing-function: ease-in;
@@ -1289,7 +1288,7 @@ div#gmap:before, div#gmap:after {display:none;}
  =========================*/
 
 footer {
-	background: #303030;
+	background: #f7f8fb;
 	text-align: center;
 }
 .footer_top {
@@ -1297,12 +1296,12 @@ footer {
 	padding-bottom: 35px;
 }
 .footer_bottom {
-	border-top: 1px solid #424242;
+	border-top: 1px solid #e7ebf3;
 	height: 75px;
 }
 .footer_bottom p {
 	font-size: 13px;
-	color: #a4a4a4;
+	color: #4e535a;
 	line-height: 73px;
 	margin-bottom: 0;
 }
