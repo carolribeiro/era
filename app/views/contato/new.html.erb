@@ -6,18 +6,14 @@
 					<h1>Contato</h1>
 					<div class="rsvp_wrap">
 						<h2></h2>
-						<form class="contact-form" method="post" action="#">
-							<p><input type="text" name="name" class="name" placeholder="Full Name*"></p>
-							<p><input type="text" name="email" class="email" placeholder="Email*"></p>
-							<select class="guest" name="guest">
-								<option selected="selected" value="Guest">Guest*</option>
-								<option value="Relatives">Relatives*</option>
-								<option value="Others">Others*</option>
-							</select>
-							<input type="text" name="attend" class="attend" placeholder="Event you want to Attend*">
-							<button type="submit">ENVIAR</button>
-						</form>
-					    
+					    <%= form_for @contato, url: contato_create_path, class:"contact-form" do |f| %>
+						  <%= notice %>
+						  <%= @contato.errors.full_messages.join(', ') %>
+						  <%= f.text_field :name, placeholder: 'Nome', class:"name" %>
+						  <%= f.email_field :email, placeholder: 'Email', class:"email" %>
+						  <%= f.text_area :body, placeholder: 'Mensagem' %>
+						  <%= f.submit 'Enviar' %>
+						<% end %>
 					</div>
 				</div>
 			</div>

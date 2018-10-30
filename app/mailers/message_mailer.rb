@@ -8,6 +8,6 @@ class MessageMailer < ApplicationMailer
   def contato
     @greeting = "Hi"
 
-    mail to: "to@example.org"
+    mail to: "carol_rib3iro@live.com"
   end
 end

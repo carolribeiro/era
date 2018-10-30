@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get "/noticias" => "application#noticias"
   get "/galeria" => "application#galeria"
   get "/contato" => "application#contato"
+  get 'contato/new'
+  post 'contato/create'
 end
