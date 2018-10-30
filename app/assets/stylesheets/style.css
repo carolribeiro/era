@@ -46,7 +46,7 @@
 html,
 body{
 	font-family: 'Open Sans';
-	color: #939393;
+	color: #4e535a;
 	font-size: 13px;
 	line-height: 24px;
 	overflow-x:hidden;
@@ -192,7 +192,9 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 
 .section_title_wrap {
 	text-align: center;
-	padding: 125px 0;
+	/*padding: 125px 0;*/
+	padding-top: 95px;
+	padding-bottom: 20px;
 }
 
 .section_title_wrap p{
@@ -950,7 +952,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 }
 #rsvp .overlay {
 	padding: 70px 0;
-	background: rgba(255,109,109,.9);
+	background: #a24d86;
 }
 #rsvp h1 {
 	font-size: 36px;
@@ -1203,7 +1205,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	text-align: center;
 	width: 340px;
 	margin-right: 50px;
-	padding: 20px;
+	/*padding: 20px;*/
 	padding-bottom: 65px;
 }
 #our_location .single_location:last-child {
@@ -1220,7 +1222,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 
 
 #our_location .single_location i {
-	color: rgba(255,109,109, 1);
+	color: #a24d86;
 	font-size: 25px;
 }
 

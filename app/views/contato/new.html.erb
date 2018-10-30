@@ -7,11 +7,11 @@
 					<div class="rsvp_wrap">
 						<h2></h2>
 					    <%= form_for @contato, url: contato_create_path, class:"contact-form" do |f| %>
-						  <%= notice %>
+						  <p class="text-success"><%= notice%></p>
 						  <%= @contato.errors.full_messages.join(', ') %>
-						  <%= f.text_field :name, placeholder: 'Nome', class:"name" %>
-						  <%= f.email_field :email, placeholder: 'Email', class:"email" %>
-						  <%= f.text_area :body, placeholder: 'Mensagem' %>
+						  <%= f.text_field :name, :required => true , placeholder: 'Nome', class:"name" %>
+						  <%= f.email_field :email, :required => true, placeholder: 'Email', class:"email" %>
+						  <%= f.text_area :body, :required => true, placeholder: 'Mensagem' %>
 						  <%= f.submit 'Enviar' %>
 						<% end %>
 					</div>
@@ -28,9 +28,10 @@
 			<!-- .section_title_wrap -->
 			<div class="section_title_wrap">
 				<h1 class="section_title">
-					<span>Localização</span>
+					Localização
 				</h1>
-			</div> <!-- /.section_title_wrap -->
+			</div> 
+			<!-- /.section_title_wrap -->
 
 			<div class="row">
 				<div class="single_location col-lg-3 col-sm-3">

@@ -6,7 +6,9 @@ class ContatoController < ApplicationController
   def create
     @contato = Contato.new message_params
     if @contato.valid?
-      redirect_to contato_new_path, notice: "Message received, thanks!"
+      MessageMailer.contato(@contato).deliver_now
+      redirect_to contato_new_path, notice: "Mensagem enviada!"
+      
     else
       render :new
     end
