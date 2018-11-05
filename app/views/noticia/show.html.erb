@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @noticia.titulo %>
+</p>
+
+<p>
+  <strong>Texto:</strong>
+  <%= @noticia.texto %>
+</p>
+
+<p>
+  <strong>Img:</strong>
+  <%= image_tag(@noticia.image) %>
+</p>
+
+<p>
+  <strong>Autor:</strong>
+  <%= @noticia.autor %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @noticia.created_at.strftime("%d/%m/%Y") %>
+</p>
+

@@ -68,9 +68,10 @@
 					<div class="info-box">
 						<h2>Informática</h2>
 						<p>Indicado para pessoas com mais de 40 anos de idade, o curso permite ao participante o primeiro contato com o computador, fornecendo informações básicas de informática e conhecimentos para a navegação na internet, explorando os principais recursos de pesquisa e entretenimento. </p>
-						<button>Saiba mais</button>
+						<%= link_to "Saiba mais",  cursos_informatica_path %>
 					</div>
-				</div> <!-- /.single_groom -->
+				</div> 
+				<!-- /.single_groom -->
 
 				<!-- .single_bride -->
 				<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 single_bride col-lg-offset-1 col-md-offset-1 wow slideInRight"  data-animation-duration="3s" data-animation-delay="2s">
@@ -78,9 +79,10 @@
 					<div class="info-box">
 						<h2>Espanhol</h2>
 						<p>Indicado para pessoas com mais de 40 anos de idade, o curso permite ao participante o primeiro contato com o computador, fornecendo informações básicas de informática e conhecimentos para a navegação na internet, explorando os principais recursos de pesquisa e entretenimento. </p>
-						<button>Saiba mais</button>
+						<%= link_to "Saiba mais",  cursos_espanhol_path %>
 					</div>
-				</div> <!-- /.single_bride -->
+				</div> 
+				<!-- /.single_bride -->
 
 			</div>
 		</div>
@@ -99,48 +101,50 @@
 			<!-- /.section_title_wrap -->
 
 			<div class="row">
+				<% @noticias.each do |noticia| %>
 				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
 					<div class="row">
 						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
 							<div class="image-wrap">
-								<%= image_tag("leticia.jpg", alt: "Letícia") %>
+								<%= image_tag(noticia.image, class:"image") %>
 								<div class="overlay"></div>
 							</div>
-							<label>26/10/2018</a></label>
-							<h2>Titulo</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur ipsum eget augue tincidunt commodo ut eu dolor. </p>
-							<a href="#" class="readmore">Leia mais</a>
+							<label><%= noticia.created_at.strftime("%d/%m/%Y") %></label>
+							<h2><%= noticia.titulo %></h2>
+							<p><%= noticia.texto %></p>
+							<%= link_to "Leia mais", noticia, class:"readmore" %>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
-					<div class="row">
-						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
-							<div class="image-wrap">
-								<%= image_tag("leticia.jpg", alt: "Letícia") %>
-								<div class="overlay"></div>
-							</div>
-							<label>26/10/2018</a></label>
-							<h2>Titulo</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur ipsum eget augue tincidunt commodo ut eu dolor. </p>
-							<a href="#" class="readmore">Leia mais</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
-					<div class="row">
-						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
-							<div class="image-wrap">
-								<%= image_tag("leticia.jpg", alt: "Letícia") %>
-								<div class="overlay"></div>
-							</div>
-							<label>26/10/2018</a></label>
-							<h2>Titulo</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur ipsum eget augue tincidunt commodo ut eu dolor. </p>
-							<a href="#" class="readmore">Leia mais</a>
-						</div>
-					</div>
-				</div>
+				<% end %>
+				<!--<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">-->
+				<!--	<div class="row">-->
+				<!--		<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">-->
+				<!--			<div class="image-wrap">-->
+				<!--				<%= image_tag("leticia.jpg", alt: "Letícia") %>-->
+				<!--				<div class="overlay"></div>-->
+				<!--			</div>-->
+				<!--			<label>26/10/2018</a></label>-->
+				<!--			<h2>Titulo</h2>-->
+				<!--			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur ipsum eget augue tincidunt commodo ut eu dolor. </p>-->
+				<!--			<a href="#" class="readmore">Leia mais</a>-->
+				<!--		</div>-->
+				<!--	</div>-->
+				<!--</div>-->
+				<!--<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">-->
+				<!--	<div class="row">-->
+				<!--		<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">-->
+				<!--			<div class="image-wrap">-->
+				<!--				<%= image_tag("leticia.jpg", alt: "Letícia") %>-->
+				<!--				<div class="overlay"></div>-->
+				<!--			</div>-->
+				<!--			<label>26/10/2018</a></label>-->
+				<!--			<h2>Titulo</h2>-->
+				<!--			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur ipsum eget augue tincidunt commodo ut eu dolor. </p>-->
+				<!--			<a href="#" class="readmore">Leia mais</a>-->
+				<!--		</div>-->
+				<!--	</div>-->
+				<!--</div>-->
 			</div>
 		</div>
 	</section> 

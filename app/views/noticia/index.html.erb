@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Noticia</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Texto</th>
+      <th>Img</th>
+      <th>Autor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @noticia.each do |noticia| %>
+      <tr>
+        <td><%= noticia.titulo %></td>
+        <td><%= noticia.texto %></td>
+        <td><%= noticia.image %></td>
+        <td><%= noticia.autor %></td>
+        <td><%= link_to 'Show', noticia %></td>
+        <td><%= link_to 'Edit', edit_noticium_path(noticia) %></td>
+        <td><%= link_to 'Destroy', noticia, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Noticium', new_noticium_path %>

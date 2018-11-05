@@ -442,19 +442,6 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
   margin-top: 25px;
 }
 
-/*==========================
- # 7. Curv Gray Styles
- =========================*/
-
-.curv-gray {
-	background: url(images/curv.png) repeat-x;
-	height: 20px;
-	margin-top: -10px;
-}
-.curv-gray h2 {
-	display: none;
-}
-
 
 /*==========================
  # 9. Groom and Bride Styles
@@ -546,7 +533,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	color: rgba(255,109,109, 1);
 	border-color: rgba(255,109,109, 1);
 }
-#groom_bride .info-box button {
+#groom_bride .info-box a {
 	background: #a24d86;
 	color: #fff;
 	border: none;
@@ -1210,14 +1197,14 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 	margin-top: 15px;
 }
 
-#blog .single_blog_post a.readmore:before {
-  border-radius: 5px;
-  background: #fff;
-  border: 1px solid #FF6D6D;
-}
-#blog .single_blog_post a.readmore:hover, #blog .single_blog_post a.readmore:focus, #blog .single_blog_post a.readmore:active {
-  color: #FF6D6D;
-}
+/*#blog .single_blog_post a.readmore:before {*/
+/*  border-radius: 5px;*/
+/*  background: #fff;*/
+/*  border: 1px solid #a24d86;*/
+/*}*/
+/*#blog .single_blog_post a.readmore:hover, #blog .single_blog_post a.readmore:focus, #blog .single_blog_post a.readmore:active {*/
+/*  color: #a24d86;*/
+/*}*/
 #blog .single_blog_post .image-wrap {
 	position: relative;
 	overflow: hidden;

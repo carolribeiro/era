@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
     def index
+       @noticias = Noticia.last(3).reverse
     end
     
     def sobre
