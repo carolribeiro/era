@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
     end
 
     def noticias
+        @noticias = Noticia.all.order("created_at DESC")
     end
 
     def galeria

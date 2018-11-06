@@ -1,59 +1,27 @@
-<!-- #blog -->
-	<section id="blog">
-		<div class="container">
-
-			<!-- .section_title_wrap -->
-			<div class="section_title_wrap">
-				<h1 class="section_title">
-					Notícias
-				</h1>
-			</div>
-			<!-- /.section_title_wrap -->
-
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
-					<div class="row">
-						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
-							<div class="image-wrap">
-								<%= image_tag("leticia.jpg", alt: "Letícia") %>
-								<div class="overlay"></div>
-							</div>
-							<label>26/10/2018</a></label>
-							<h2>Titulo</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur ipsum eget augue tincidunt commodo ut eu dolor. </p>
-							<a href="#" class="readmore">Leia mais</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
-					<div class="row">
-						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
-							<div class="image-wrap">
-								<%= image_tag("leticia.jpg", alt: "Letícia") %>
-								<div class="overlay"></div>
-							</div>
-							<label>26/10/2018</a></label>
-							<h2>Titulo</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur ipsum eget augue tincidunt commodo ut eu dolor. </p>
-							<a href="#" class="readmore">Leia mais</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
-					<div class="row">
-						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
-							<div class="image-wrap">
-								<%= image_tag("leticia.jpg", alt: "Letícia") %>
-								<div class="overlay"></div>
-							</div>
-							<label>26/10/2018</a></label>
-							<h2>Titulo</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur ipsum eget augue tincidunt commodo ut eu dolor. </p>
-							<a href="#" class="readmore">Leia mais</a>
-						</div>
-					</div>
-				</div>
-			</div>
+<section id="blog">
+	<div class="container">
+		<div class="section_title_wrap">
+			<h1 class="section_title">
+				Notícias
+			</h1>
 		</div>
-	</section> 
-	<!-- /#blog -->
+		<div class="row">
+			<% @noticias.each do |noticia| %>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="500">
+				<div class="row">
+					<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
+						<div class="image-wrap">
+							<%= image_tag(noticia.image, class:"image") %>
+							<div class="overlay"></div>
+						</div>
+						<label><%= noticia.created_at.strftime("%d/%m/%Y") %></label>
+						<h2><%= noticia.titulo %></h2>
+						<p><%= noticia.texto %></p>
+						<%= link_to "Leia mais", noticia, class:"readmore" %>
+					</div>
+				</div>
+			</div>
+			<% end %>
+		</div>
+	</div>
+</section> 
