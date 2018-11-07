@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :noticia
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root "application#index"
   get "/sobre" => "application#sobre"
   get "/cursos" => "application#cursos"
@@ -12,7 +11,13 @@ Rails.application.routes.draw do
   get "/noticias" => "application#noticias"
   # post 'noticias/create'
   get "/galeria" => "application#galeria"
-  get "/contato" => "application#contato"
-  get 'contato/new'
+ # get "/contato" => "application#contato"
+  get 'contato' => "contato#new", as: "contato"
   post 'contato/create'
+  get 'usuario/new'
+  get 'usuario/show/:id' => "usuario#show", as: "usuario_show"
+  post 'usuario/create'
+  get 'login' => "login#login", as: "login"
+  get 'logout' => "login#logout", as: "logout"
+  post 'auth' => "login#auth", as: "login_auth"
 end
