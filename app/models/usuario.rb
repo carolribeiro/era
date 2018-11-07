@@ -3,6 +3,6 @@ class Usuario < ApplicationRecord
     validates :email, presence: true, length: { minimum: 5 },
         format: { with: VALID_EMAIL }, uniqueness: true
     has_secure_password
-    validates :name, :password_digest, presence: true
-    validates :password, length: { minimum: 8 }, on: :create
+    validates :nome, :password_digest, presence: true
+    validates :password, presence: true, length: { minimum: 8 }, on: :create
 end

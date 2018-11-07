@@ -9,7 +9,8 @@ class UsuarioController < ApplicationController
 
   def create
     @user = Usuario.new(user_params)
-    if @user.save 
+    if @user.save
+      flash[:sucess] = "Usuário cadastrado com sucesso"
       redirect_to usuario_show_path(@user)
     else
       render "new"
