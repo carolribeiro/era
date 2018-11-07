@@ -17,6 +17,7 @@ class LoginController < ApplicationController
       log_in @user
       redirect_to usuario_show_path(@user)
     else
+      flash[:error] = "Email ou senha incorretos"
       redirect_to login_path
     end
   end

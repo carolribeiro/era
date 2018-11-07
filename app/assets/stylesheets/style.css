@@ -31,7 +31,7 @@
 
 
 /*==========================
- # 1. Improting Styles
+ # 1. Importing Styles
  =========================*/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,800,700,600);
@@ -137,7 +137,21 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
   transform: scaleX(1);
 }
 
+.notice {
+  color: #155724;
+}
 
+.error {
+  color: #721c24;
+}
+
+.warning {
+  color: #856404;
+}
+
+.info {
+  color: #0c5460;
+}
 
 /*==========================
  # 3. Sticky Header styles
@@ -1055,7 +1069,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 #rsvp .rsvp_wrap {
 	width: 410px;
 	margin: 0 auto;
-	padding: 30px 40px 40px;
+	padding: 40px 40px 20px;
 	background: #fff;
 	border-radius: 5px;
 }

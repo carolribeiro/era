@@ -5,7 +5,6 @@
 				<div class="row">
 					<h1>Contato</h1>
 					<div class="rsvp_wrap">
-						<h2></h2>
 					    <%= form_for @contato, url: contato_create_path, class:"contact-form" do |f| %>
 						  <p class="text-success"><%= notice%></p>
 						  <%= @contato.errors.full_messages.join(', ') %>
