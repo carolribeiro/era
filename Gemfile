@@ -31,12 +31,25 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', github: 'sferik/rails_admin'
+gem 'rails_admin_rollincode', '~>1.0'
+gem "devise"
+
+gem "font-awesome-rails"
 
 gem "paperclip", "~> 5.0.0"
 
 gem 'pusher'
 
 gem 'cloudinary'
+
+gem 'carrierwave'
+
+# Gem para gerar os pdfs
+#gem 'prawn-rails'
+# Gem para gerar os gráficos
+#gem 'gruff'
 
 gem 'jquery-rails'
 

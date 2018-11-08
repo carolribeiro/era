@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :noticia
   root "application#index"
   get "/sobre" => "application#sobre"
   get "/cursos" => "application#cursos"
   get 'cursos/informatica'
   get 'cursos/espanhol'
-  # get 'noticias/new'
+  #get 'noticias/new'
   # get 'noticias/show/:id' => "noticias#show"
   # get 'noticias/edit/:id' => "noticias#edit"
   get "/noticias" => "application#noticias"
@@ -20,4 +21,5 @@ Rails.application.routes.draw do
   get 'login' => "login#login", as: "login"
   get 'logout' => "login#logout", as: "logout"
   post 'auth' => "login#auth", as: "login_auth"
+  get 'painel' => "painel#painel", as: "painel"
 end

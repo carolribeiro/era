@@ -5,4 +5,5 @@ class Usuario < ApplicationRecord
     has_secure_password
     validates :nome, :password_digest, presence: true
     validates :password, presence: true, length: { minimum: 8 }, on: :create
+    has_many :noticias
 end

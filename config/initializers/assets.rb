@@ -16,6 +16,7 @@ Rails.application.config.assets.precompile += %w( animate.css )
 Rails.application.config.assets.precompile += %w( font-awesome.min.css )
 Rails.application.config.assets.precompile += %w( style.css )
 Rails.application.config.assets.precompile += %w( prettyPhoto.css )
+
 #Rails.application.config.assets.precompile += %w( jquery-2.1.3.min.js )
 #Rails.application.config.assets.precompile += %w( bootstrap.min.js )
 Rails.application.config.assets.precompile += %w( jquery.prettyPhoto.js )

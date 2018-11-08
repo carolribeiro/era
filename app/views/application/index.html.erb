@@ -83,7 +83,7 @@
 					<div class="row">
 						<div class="single_blog_post col-lg-12 col-md-12 col-sm-12">
 							<div class="image-wrap">
-								<%= image_tag(noticia.image, class:"image") %>
+								<%= image_tag(noticia.photo.to_s, class:"image") %>
 								<div class="overlay"></div>
 							</div>
 							<label><%= noticia.created_at.strftime("%d/%m/%Y") %></label>
